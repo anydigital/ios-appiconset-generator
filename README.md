@@ -1,6 +1,6 @@
 # ios-appiconset-generator
 
-Generate iOS app icons from a source image for Xcode asset catalogs.
+Automagically generates all required iOS app icon sizes `.appiconset` from a single provided image for Xcode Asset Catalog `.xcassets`.
 
 ## Requirements
 
@@ -10,14 +10,15 @@ Generate iOS app icons from a source image for Xcode asset catalogs.
 
 ## Installation
 
-```bash
-npm install -g @anydigital/ios-appiconset-generator
-```
-
-Or use directly with npx:
+Use directly with `npx` without installing:
 
 ```bash
 npx @anydigital/ios-appiconset-generator
+```
+
+Or install locally:
+```bash
+npm install @anydigital/ios-appiconset-generator --save-dev
 ```
 
 ## Usage
@@ -27,22 +28,22 @@ npx @anydigital/ios-appiconset-generator
    cd ios/YourApp/Images.xcassets/AppIcon.appiconset
    ```
 
-2. Place your source icon image as `Icon.png` in that directory (1024x1024 recommended)
-
-3. Run the generator:
+2. Run the generator:
    ```bash
-   ios-appiconset-generator
+   npx @anydigital/ios-appiconset-generator # OR ios-appiconset-generator if installed locally
    ```
+
+3. Optionally, place your source icon image as `AppIcon.png` in `.appiconset` directory (1024x1024 recommended) before running the generator.
 
 The script will:
 - Generate all required icon sizes based on `Contents.json`
 - Automatically update `Contents.json` with filenames if missing
-- Create a placeholder icon if `Icon.png` doesn't exist
+- Create a placeholder icon if `AppIcon.png` doesn't exist
 
 ## How it works
 
 The tool reads your `Contents.json` file, extracts the required icon sizes and scales, and uses macOS's `sips` utility to generate properly sized PNG files. It preserves the Xcode formatting of `Contents.json` when updating filenames.
 
-## License
+---
 
-MIT
+_✨ found this useful? `→` give a [star on GitHub](https://github.com/anydigital/ios-appiconset-generator) `or` simply [join TricksForGeeks on Reddit](https://www.reddit.com/r/TricksForGeeks/) for more ✨_
