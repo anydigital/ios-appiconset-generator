@@ -1,6 +1,6 @@
 {
   "name": "@anydigital/ios-app-icon-generator",
-  "version": "0.0.1-dev",
+  "version": "1.0.0-alpha",
   "description": "Generate iOS app icons from a source image for Xcode asset catalogs",
   "bin": {
     "gen-ios-app-icons": "./bin/gen-ios-app-icons.sh"
@@ -26,6 +26,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
-  }
+    "url": "https://github.com/anydigital/ios-app-icon-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anydigital/ios-app-icon-generator/issues"
+  },
+  "homepage": "https://github.com/anydigital/ios-app-icon-generator"
 }
