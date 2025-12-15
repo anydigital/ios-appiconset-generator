@@ -2,6 +2,8 @@
 
 Automagically generates all required iOS app icon sizes `.appiconset` from a single provided image for Xcode Asset Catalog `.xcassets`.
 
+![](https://github.com/user-attachments/assets/62992fba-8abc-4cf4-965f-37c88251ae4b)
+
 ## Requirements
 
 - macOS (uses `sips` for image resizing)
