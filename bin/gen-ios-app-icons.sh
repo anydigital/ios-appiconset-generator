@@ -10,7 +10,8 @@ if ! command -v sips >/dev/null 2>&1; then
   echo "sips is required (macOS). Install ImageMagick or use Xcode to add icons." >&2; exit 1
 fi
 
-SOURCE_IMAGE="Icon.png"
+FOLDER_NAME=$(basename "$PWD")
+SOURCE_IMAGE="../${FOLDER_NAME%.*}.png"
 
 if [ ! -f "$SOURCE_IMAGE" ]; then
   echo "Creating placeholder $SOURCE_IMAGE"
@@ -20,7 +21,7 @@ B64
 
   python3 - <<PY
 import base64
-open('Icon.png','wb').write(base64.b64decode(open('/tmp/_appicon_b64.txt','rb').read()))
+open('$SOURCE_IMAGE','wb').write(base64.b64decode(open('/tmp/_appicon_b64.txt','rb').read()))
 PY
   rm -f /tmp/_appicon_b64.txt
 else
@@ -57,7 +58,7 @@ for e in entries:
     outputs.append((fn, px, px))
 
     # call sips to resize
-    cmd = ['sips','-z',str(px),str(px),'Icon.png','--out',fn]
+    cmd = ['sips','-z',str(px),str(px),'$SOURCE_IMAGE','--out',fn]
     print('RUN:', ' '.join(cmd))
     subprocess.check_call(cmd)
 
