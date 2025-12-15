@@ -1,9 +1,9 @@
 {
-  "name": "@anydigital/ios-app-icon-generator",
+  "name": "@anydigital/ios-appiconset-generator",
   "version": "1.0.0-alpha",
   "description": "Generate iOS app icons from a source image for Xcode asset catalogs",
   "bin": {
-    "gen-ios-app-icons": "bin/gen-ios-app-icons.sh"
+    "ios-appiconset-generator": "bin/ios-appiconset-generator.sh"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

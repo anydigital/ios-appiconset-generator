@@ -1,4 +1,4 @@
-# ios-app-icon-generator
+# ios-appiconset-generator
 
 Generate iOS app icons from a source image for Xcode asset catalogs.
 
@@ -11,13 +11,13 @@ Generate iOS app icons from a source image for Xcode asset catalogs.
 ## Installation
 
 ```bash
-npm install -g ios-app-icon-generator
+npm install -g @anydigital/ios-appiconset-generator
 ```
 
 Or use directly with npx:
 
 ```bash
-npx ios-app-icon-generator
+npx @anydigital/ios-appiconset-generator
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ npx ios-app-icon-generator
 
 3. Run the generator:
    ```bash
-   gen-ios-app-icons
+   ios-appiconset-generator
    ```
 
 The script will:
