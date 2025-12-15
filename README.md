@@ -46,6 +46,10 @@ The script will:
 
 The tool reads your `Contents.json` file, extracts the required icon sizes and scales, and uses macOS's `sips` utility to generate properly sized PNG files. It preserves the Xcode formatting of `Contents.json` when updating filenames.
 
+## Links
+
+https://www.reddit.com/r/TricksForGeeks/comments/1pnm2bi/iosappiconsetgenerator/
+
 ---
 
 _✨ found this useful? `→` give a [star on GitHub](https://github.com/anydigital/ios-appiconset-generator) `or` simply [join TricksForGeeks on Reddit](https://www.reddit.com/r/TricksForGeeks/) for more ✨_
