@@ -1,6 +1,6 @@
 {
   "name": "@anydigital/ios-appiconset-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate iOS app icons from a source image for Xcode asset catalogs",
   "bin": {
     "ios-appiconset-generator": "bin/ios-appiconset-generator.sh"
